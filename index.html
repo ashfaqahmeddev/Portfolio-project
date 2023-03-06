@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72eea6b25a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/8DE9345B-84A2-499E-ACE2-4041796ADDDF.PNG" id="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fa-light fa-square-x"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>ASHFAQ AHMED</h1>
+                <a href="images/ASHFAQ AHMED CV.pdf"  download class="btn btn2">Download CV</a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- -------------------ABOUT ME---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG-5973 (2).jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>Self-motivated and enthusiastic worker with experience in different field. After graduating from
+                        university with a degree in the branch of civil engineering. I ended up working in the construction
+                        field for Three years. I gained valuable experience in project management, Scheduling & Team work I enjoyed the challenges & reward of this field but i ultimately decided a career change was right for me. My decision for my career change in web Development to evolve my creative & express myself through design & functionality incredibly satisfying to bring my ideas to life on the web and create something people can interact with & there is always something new to learn  new programming language, framework or best practice and constant learning.
+                        </p> 
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End Development</span><br>Designing a web app Development</li>
+                            <li><span>UI/UX</span><br>Basic principles of UI/UX design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Current</span><br>Free Code Camp - Unpaid Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Ongoing</span><br> MBA From Madras University</li>
+                            <li><span>2014-2018</span><br>B.E From Anna University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                         <ul><li><span>META-Front End</span><br>Front End Development Proffesional Certificate</li>
+                        <li><span>Udemy</span><br>Web Development Certiication</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------SERVICES-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Front-end services involve designing the user interface for an application or website with a focus on accessibility, responsiveness, performance, cross-browser compatibility, security, and usability.<span id="dots">...</span><span id="more">
+                        It's about creating an intuitive and easy-to-use interface that works well on different devices and web browsers while being secure and fast-loading.front-end services play a critical role in enhancing user experience and engagement with an application or website.</span>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>UI/UX design involves a holistic approach to designing a user-friendly and intuitive interface that considers user needs and preferences. It involves conducting user research, organizing information, and creating an attractive and visually appealing design that aligns with the brand identity.<span id="dots1">...</span><span id="more1">
+                        The goal of UI/UX design is to create a positive user experience that enhances engagement and satisfaction with the application or website. UI/UX design is about creating a seamless experience for users, from the layout and structure of the interface to the visual elements and interactions</span>
+                    <button onclick="myFunction1()" id="myBtn1">Read more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------My work----------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>To Do List App</h3>
+                        <p>Created a to-do list project using React JS involves designing and implementing the user interface with React components, managing state and data flow with React's built-in tools, and potentially using additional libraries.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Online food Webpage</h3>
+                        <p>Created an online food page using HTML and CSS involves structuring the content of the page with HTML tags, such as headings and paragraphs, and styling the elements with CSS rules, such as fonts and colors. The front-end developer would also incorporate visual elements, such as images and videos, to showcase the food offerings and ensure the page is responsive.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Portfolio page</h3>
+                        <p>Created a portfolio page involves designing and implementing the user interface with HTML, CSS, and potentially JavaScript, showcasing the creator's work and skills through visual elements such as images, videos, and animations. The front-end developer would also ensure that the page is responsive and accessible across different devices and web browsers, and potentially incorporate additional features such as contact forms or social media links.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------------------------contact------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:ashfaqahmeddev@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i> ashfaqahmeddev@gmail.com</a></p>
+                    <p><a href="tel:+917867060166" target="_blank"><i class="fa-solid fa-square-phone"></i>   7867060166</a></p>
+                    <div class="social-icons">
+                        <a href="https://m.facebook.com/AshfaqRj.in/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://www.twitter.com/AshfaqRj"><i class="fa-brands fa-square-twitter" target="_blank"></i></a>
+                        <a href="https://www.instagram.com/ashfaq_rj/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="http://linkedin.com/in/ashfaq-ahmed-5a90b216a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ashfaqahmeddev" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/ASHFAQ AHMED CV.pdf"  download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form> 
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        function myFunction(params) {
+            
+        
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display ==="none") {
+            dots.style.display="inline";
+            btnText.innerHTML="Read more";
+            moreText.style.display="none"
+        } else {
+            dots.style.display="none";
+            btnText.innerHTML="Read less"
+            moreText.style.display="inline"
+        }
+    }
+    </script>
+    <script>
+        function myFunction1(params) {
+            
+        
+        var dotss = document.getElementById("dots1");
+        var moreTextt = document.getElementById("more1");
+        var btnTextt = document.getElementById("myBtn1");
+
+        if (dotss.style.display ==="none") {
+            dotss.style.display="inline";
+            btnTextt.innerHTML="Read more";
+            moreTextt.style.display="none"
+        } else {
+            dotss.style.display="none";
+            btnTextt.innerHTML="Read less"
+            moreTextt.style.display="inline"
+        }
+    }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right="0"
+        }
+        function closemenu() {
+            sidemeu.style.right ="-200px"
+        }
+
+    </script>
+</body>
+</html>
